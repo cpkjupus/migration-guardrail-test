@@ -6,6 +6,11 @@ on:
     paths:
       - "**/migrations/**"
 
+permissions:
+  checks: write
+  actions: write
+  pull-requests: read
+
 jobs:
   retrigger:
     name: retrigger-migration-checks
