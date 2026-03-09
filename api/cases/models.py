@@ -9,6 +9,7 @@ class Case(models.Model):
         choices=[("NEW", "New"), ("OPEN", "Open"), ("CLOSED", "Closed")],
         default="NEW",
     )
+    priority = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
