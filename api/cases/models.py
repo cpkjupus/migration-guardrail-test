@@ -10,6 +10,7 @@ class Case(models.Model):
         default="NEW",
     )
     priority = models.IntegerField(default=0)
+    notes = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
