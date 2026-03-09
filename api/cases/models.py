@@ -14,6 +14,7 @@ class Case(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     archived = models.BooleanField(default=False)
+    category = models.CharField(max_length=100, blank=True)
 
     def __str__(self):
         return self.title
