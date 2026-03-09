@@ -9,6 +9,7 @@ class Case(models.Model):
         choices=[("NEW", "New"), ("OPEN", "Open"), ("CLOSED", "Closed")],
         default="NEW",
     )
+    assigned_to = models.CharField(max_length=255, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
